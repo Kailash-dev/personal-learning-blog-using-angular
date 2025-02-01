@@ -1,7 +1,37 @@
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 
-<div class="main-layout">
-  <router-outlet></router-outlet>
-</div>
+<!-- <div class="main-layout"> -->
 
-<app-footer></app-footer>
+<!-- </div> -->
+
+<!-- <app-footer></app-footer> -->
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-sidebar></app-sidebar>
+    <!-- <p>Auto-resizing sidenav</p>
+    @if (showFiller) {
+      <p>Lorem, ipsum dolor sit amet consectetur.</p>
+    } -->
+   
+  </mat-drawer>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Kailash Technical Blog's </span>
+    <span class="example-spacer"></span>
+   
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+  <!-- <div class="example-sidenav-content"> -->
+    <router-outlet></router-outlet>
+    <!-- <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button> -->
+  <!-- </div> -->
+
+</mat-drawer-container>

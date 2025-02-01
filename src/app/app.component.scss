@@ -1,13 +1,21 @@
-.main-content {
-  min-height: 100vh;
-  padding-bottom: 4rem; // Adjust for footer height
+
+.example-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.content {
-  padding: 2rem;
+.example-sidenav-content {
+  // display: flex;
+  height: 100%;
+  // align-items: center;
+  // justify-content: center;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.example-sidenav {
+  padding: 20px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }

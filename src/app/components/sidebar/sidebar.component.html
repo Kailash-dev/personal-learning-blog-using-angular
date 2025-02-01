@@ -1,16 +1,21 @@
-<div class="sidebar">
-    <h2>Technologies</h2>
-    <ul>
-      <li *ngFor="let tech of technologies">
-        <div class="tech-header" (click)="toggleAccordion(tech)" [class.expanded]="selectedTech === tech.name">
+<div class="sidebar" [class.hidden]="!isSidebarOpen">
+  <h2>Technologies</h2>
+  <mat-accordion multi>
+    <mat-expansion-panel *ngFor="let tech of technologies" class="accordion-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
           {{ tech.name }}
-        </div>
-        <ul *ngIf="selectedTech === tech.name" class="accordion">
-          <li *ngFor="let concept of tech.concepts" (click)="selectConcept(tech, concept)">
-            {{ concept }}
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  
+        </mat-panel-title>
+        <mat-panel-description>
+       
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ul class="accordion-list">
+        <li *ngFor="let concept of tech.concepts" (click)="onTechClick(concept)">
+          {{ concept.name }}
+        </li>
+      </ul>
+      
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
