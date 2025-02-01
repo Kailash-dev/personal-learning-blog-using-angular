@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -9,4 +10,11 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input() tech: any
+
+  constructor(private router: Router) {}
+
+  navigateToTech(name: string) {
+    const techName = name.toLowerCase(); // Convert to lowercase
+    this.router.navigate([`${techName}`]); // Navigate to route
+  }
 }

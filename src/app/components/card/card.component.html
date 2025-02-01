@@ -1,14 +1,15 @@
-<div class="card">
-    <div class="card-header">
-      <h2>{{ tech.name }}</h2>
-      <p><strong>{{ tech.type }}</strong></p>
-    </div>
-  
-    <div class="card-body">
-      <p><strong>Description:</strong> {{ tech.description }}</p>
-      <p><strong>Popularity:</strong> {{ tech.popularity }}</p>
-      <p><strong>Latest Version:</strong> {{ tech.latestVersion }}</p>
-      <p><strong>Related Ecosystem:</strong> {{ tech.ecosystem }}</p>
+<div class="card" (click)="navigateToTech(tech.name)">
+  <div class="card-header">
+    <h2 class="tech-name">{{ tech.name }}</h2>
+    <span class="badge">{{ tech.type }}</span>
+  </div>
+
+  <div class="card-body">
+    <p class="description"><strong>Description:</strong> {{ tech.description }}</p>
+    <div class="details">
+      <p><strong>Popularity:</strong> <span class="highlight">{{ tech.popularity }}</span></p>
+      <p><strong>Latest Version:</strong> <span class="highlight">{{ tech.latestVersion }}</span></p>
+      <p><strong>Related Ecosystem:</strong> <span class="highlight">{{ tech.ecosystem }}</span></p>
     </div>
   </div>
-  
+</div>

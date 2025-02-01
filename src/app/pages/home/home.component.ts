@@ -52,7 +52,7 @@ export class HomeComponent {
       ecosystem: "GitHub, GitLab, Bitbucket"
     },
     {
-      name: "Fabric.js",
+      name: "Fabric",
       type: "Canvas Library",
       description: "A JavaScript framework for creating interactive object-oriented canvas applications.",
       popularity: "Medium",
@@ -60,7 +60,7 @@ export class HomeComponent {
       ecosystem: "Canvas API"
     },
     {
-      name: "Node.js",
+      name: "Node",
       type: "JavaScript Runtime",
       description: "A JavaScript runtime built on Chrome's V8 JavaScript engine for building scalable network applications.",
       popularity: "High",
