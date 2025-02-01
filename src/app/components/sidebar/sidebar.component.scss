@@ -1,10 +1,10 @@
 .sidebar {
   width: 280px;
-  background: #f4f6f9; /* Light grayish background */
+  background: transparent; /* Light grayish background */
   color: #333; /* Darker text for contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  // padding: 20px;
+  // border-radius: 10px;
+  // box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   font-family: 'Arial', sans-serif;
   transition: all 0.3s ease-in-out;
 
@@ -37,12 +37,12 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
-      background: #3498db; /* Blue background for header */
+      // background: #3498db; /* Blue background for header */
       color: white; /* White text for contrast */
       transition: background 0.3s;
 
       &:hover {
-        background: #2980b9; /* Darker blue on hover */
+        background: #b7babc; /* Darker blue on hover */
       }
 
       mat-icon {
@@ -59,14 +59,21 @@
       list-style: none;
 
       li {
-        background: #1abc9c; /* Soft teal color for list items */
+        background: #bdc3c7; /* Light gray for list items */
         margin-bottom: 8px;
         padding: 8px;
         border-radius: 6px;
         transition: background 0.3s;
         cursor: pointer;
+        
+        /* Gray for hover and light blue for selection */
         &:hover {
-          background: #16a085; /* Slightly darker teal on hover */
+          background: #95a5a6; /* Medium gray on hover */
+        }
+
+        &.selected {
+          background: #3498db; /* Light blue on selection */
+          color: white;
         }
       }
     }

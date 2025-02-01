@@ -26,23 +26,23 @@ export class SidebarComponent implements OnInit {
       name: "Angular",
       route: "angular",
       concepts: [
-         { name:"Introduction", route: 'intro', },
-         { name:"Api-calls", route: 'api-call', },
-         { name:"Component", route: 'component', },
-         { name:"Data-Binding", route: 'data-binding', },
-         { name:"Directive", route: 'directives',  },
-         { name:"Event-Emitter", route: 'event-emitter', },
-         { name:"Forms", route: 'forms',  },
-         { name:"Parent & Child Communication", route: 'parent-child-communication',  },
-         { name:"Permonance", route: 'performance-opt', },
-         { name:"Pipes", route: 'pipes',  },
-         { name:"Routing", route: 'routing', },
-         { name:"Security", route: 'security-auth', },
-         { name:"DI", route: 'services-and-di',  },
-         { name:"Statemanagement", route: 'state-management',  },
-         { name:"Templates & Views", route: 'templates-and-views',  },
-         { name:"ViewChild & ContentChild", route: 'viewchild-and-contentchild',  },
-         { name:"Component", route: 'component', }
+         { name:"Introduction", route: '/angular/intro', },
+         { name:"Api-calls", route: '/angular/api-call', },
+         { name:"Component", route: '/angular/component', },
+         { name:"Data-Binding", route: '/angular/data-binding', },
+         { name:"Directive", route: '/angular/directives',  },
+         { name:"Event-Emitter", route: '/angular/event-emitter', },
+         { name:"Forms", route: '/angular/forms',  },
+         { name:"Parent & Child Communication", route: '/angular/parent-child-communication',  },
+         { name:"Permonance", route: '/angular/performance-opt', },
+         { name:"Pipes", route: '/angular/pipes',  },
+         { name:"Routing", route: '/angular/routing', },
+         { name:"Security", route: '/angular/security-auth', },
+         { name:"DI", route: '/angular/services-and-di',  },
+         { name:"Statemanagement", route: '/angular/state-management',  },
+         { name:"Templates & Views", route: '/angular/templates-and-views',  },
+         { name:"ViewChild & ContentChild", route: '/angular/viewchild-and-contentchild',  },
+  
        
       ],
     },
@@ -107,11 +107,6 @@ export class SidebarComponent implements OnInit {
       this.currentSelectedTech = urlSegments[0]?.path; // "angular" in this case
       console.log("Extracted tech stack:", this.currentSelectedTech);
     });
-    this.activatedRoute.url.subscribe(urlSegments => {
-      if (urlSegments.length > 0) {
-        this.currentTech = urlSegments[0].path; // "angular" from "/angular/intro"
-      }
-    });
   }
 
   toggleAccordion(tech: any) {
@@ -132,8 +127,7 @@ export class SidebarComponent implements OnInit {
 
   onTechClick(tech: any) {
     console.log("tech", tech);
-    console.log(`/${this.currentTech}${tech.route}`)
-    // this.router.navigate([`/${this.currentTech}${tech.route}`]);
-    this.router.navigate([`/${this.currentTech}${tech.route}`], { fragment: '' });
+    // this.router.navigate([`${tech.route}`]);
+    this.router.navigate([`${tech.route}`]);
   }
 }

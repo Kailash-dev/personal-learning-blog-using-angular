@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { AngularComponent } from './angular.component';
 import { ApiCallsComponent } from './api-calls/api-calls.component';
-import { ComponentsComponent } from './components/components.component';
+// import { ComponentsComponent } from './components/components.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EventEmitterComponent } from './event-emitter/event-emitter.component';
@@ -21,7 +21,7 @@ export const ANGULAR_ROUTES: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'intro' },
   { path: 'intro', component: IntroToAngularComponent },
   { path: 'api-call', component: ApiCallsComponent },
-  { path: 'component', component: ComponentsComponent },
+  
   { path: 'data-binding', component: DataBindingComponent },
   { path: 'directives', component: DirectivesComponent },
   { path: 'event-emitter', component: EventEmitterComponent },
@@ -35,5 +35,5 @@ export const ANGULAR_ROUTES: Routes = [
   { path: 'state-management', component: StateManagementComponent },
   { path: 'templates-and-views', component: TemplateAndViewsComponent },
   { path: 'viewchild-and-contentchild', component: ViewchildContentchildComponent },
-  { path: 'component', component: ComponentsComponent }
+  
 ];

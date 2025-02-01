@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Blog Container */
+.blog-container {
+    // max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.75rem;
+    color: #2980b9;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 5px solid #2980b9;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+.data-binding-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-binding-table th, .data-binding-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.data-binding-table th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.data-binding-table td {
+    background-color: #f9f9f9;
+}
+
+/* List Styling */
+.benefits-list, .limitations-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefits-list li, .limitations-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.benefits-list li:before, .limitations-list li:before {
+    content: '✔️';
+    margin-right: 10px;
+}
+
+.benefits-list li {
+    color: #27ae60;
+}
+
+.limitations-list li {
+    color: #e74c3c;
+}
+
+.faq {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    border-radius: 5px;
+}
+
+.faq h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #2980b9;
+}
+
+.faq p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 40px;
+}

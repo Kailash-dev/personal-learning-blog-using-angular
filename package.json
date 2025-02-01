@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:personal-learning-blog": "node dist/personal-learning-blog/server/server.mjs",
-    "deploy": "ng build --base-href https://kailash-dev.github.io/personal-learning-blog-using-angular && npx angular-cli-ghpages --dir=dist/personal-learning-blog"
+    "deploy": "ng build --base-href https://kailash-dev.github.io/personal-learning-blog-using-angular && npx angular-cli-ghpages --dir=dist/personal-learning-blog/broswer/"
   },
   "private": true,
   "dependencies": {
