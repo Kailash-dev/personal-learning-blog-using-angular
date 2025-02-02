@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{Db as a,_ as n}from"./chunk-ODAF6FVO.mjs";import"./chunk-5XUXGTUW.mjs";var e=class t{static \u0275fac=function(o){return new(o||t)};static \u0275cmp=n({type:t,selectors:[["app-react"]],standalone:!0,features:[a],decls:0,vars:0,template:function(o,m){}})};var f=[{path:"",component:e},{path:"intro",component:e},{path:"advanced",component:e}];export{f as React_ROUTES};

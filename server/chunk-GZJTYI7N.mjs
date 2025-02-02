@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{Db as p,_ as n}from"./chunk-ODAF6FVO.mjs";import"./chunk-5XUXGTUW.mjs";var t=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=n({type:o,selectors:[["app-git"]],standalone:!0,features:[p],decls:0,vars:0,template:function(e,m){}})};var f=[{path:"",component:t},{path:"intro",component:t},{path:"advanced",component:t}];export{f as Git_ROUTES};
