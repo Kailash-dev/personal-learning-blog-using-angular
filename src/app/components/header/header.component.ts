@@ -1,21 +1,15 @@
-import { Component } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { SidebarService } from '../../services/sidebar.service';
+import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [MatToolbarModule,MatIconModule,MatButtonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
- 
+export class HeaderComponent implements OnInit {
 
-  constructor(private sidebarService: SidebarService) {}
-  toggleSidebar() {
-    console.log('click')
-    this.sidebarService.toggleSidebar();
+  constructor() { }
+
+  ngOnInit(): void {
   }
+
 }
