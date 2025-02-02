@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Db as r,_ as n}from"./chunk-ODAF6FVO.mjs";import"./chunk-5XUXGTUW.mjs";var o=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-docker"]],standalone:!0,features:[r],decls:0,vars:0,template:function(t,a){}})};var f=[{path:"",component:o},{path:"intro",component:o},{path:"advanced",component:o}];export{f as Docker_ROUTES};

@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Db as p,_ as n}from"./chunk-ODAF6FVO.mjs";import"./chunk-5XUXGTUW.mjs";var t=class e{static \u0275fac=function(o){return new(o||e)};static \u0275cmp=n({type:e,selectors:[["app-typescript"]],standalone:!0,features:[p],decls:0,vars:0,template:function(o,a){}})};var f=[{path:"",component:t},{path:"intro",component:t},{path:"advanced",component:t}];export{f as Typescript_ROUTES};
