@@ -1,6 +1,6 @@
 .sidebar {
   width: 280px;
-  background: transparent; /* Light grayish background */
+  // background: transparent; /* Light grayish background */
   color: #333; /* Darker text for contrast */
   // padding: 20px;
   // border-radius: 10px;
@@ -14,19 +14,19 @@
     font-size: 22px;
     text-transform: uppercase;
     color: #2c3e50; /* Darker gray text for heading */
-    border-bottom: 2px solid #3498db; /* Blue accent for the heading */
+    // border-bottom: 2px solid #3498db; /* Blue accent for the heading */
     padding-bottom: 10px;
   }
 
   .mat-expansion-panel {
-    background: #ecf0f1; /* Very light gray background */
+    // background: #3498DB; /* Very light gray background */
     color: #34495e; /* Darker gray text */
     border-radius: 8px;
     margin-bottom: 12px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background: #bdc3c7; /* Slightly darker gray on hover */
+      background: #ffffff; /* Slightly darker gray on hover */
     }
 
     .mat-expansion-panel-header {
@@ -42,7 +42,7 @@
       transition: background 0.3s;
 
       &:hover {
-        background: #b7babc; /* Darker blue on hover */
+        // background: #ffffff; /* Darker blue on hover */
       }
 
       mat-icon {
@@ -59,7 +59,7 @@
       list-style: none;
 
       li {
-        background: #bdc3c7; /* Light gray for list items */
+        // background: #b1b0b0; /* Light gray for list items */
         margin-bottom: 8px;
         padding: 8px;
         border-radius: 6px;
@@ -68,11 +68,11 @@
         
         /* Gray for hover and light blue for selection */
         &:hover {
-          background: #95a5a6; /* Medium gray on hover */
+          // background: #ffffff; /* Medium gray on hover */
         }
 
         &.selected {
-          background: #3498db; /* Light blue on selection */
+          // background: #3498db; /* Light blue on selection */
           color: white;
         }
       }
