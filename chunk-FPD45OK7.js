@@ -1,1 +1,0 @@
-import{Cb as a,aa as n}from"./chunk-UDGSAR3V.js";var e=class t{static \u0275fac=function(o){return new(o||t)};static \u0275cmp=n({type:t,selectors:[["app-react"]],standalone:!0,features:[a],decls:0,vars:0,template:function(o,m){}})};var f=[{path:"",component:e},{path:"intro",component:e},{path:"advanced",component:e}];export{f as React_ROUTES};
